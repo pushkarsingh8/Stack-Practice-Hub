@@ -15,14 +15,24 @@ class stack:
         
     def traverse(self):
         
-        if(self.is_empty()) :
-            return 'stack empty'
+        if self.is_empty():
+            print('stack empty')
         
         curr = self.top
         
         while curr!=None:
             print(curr.data)
-            curr = curr.next 
+            curr = curr.next
+             
+            
+    def pop(self):
+        #it' remove a last item those on top of stack "LIFO"
+        if self.is_empty():
+            return 'stack empty'
+        
+        else:
+            self.top = self.top.next
+            
             
         
         
@@ -37,17 +47,10 @@ class stack:
             self.top = new_node
             
             
-            
-            
-        
-            
         
         
         
 s = stack()
-s.push(5)
-s.traverse()
-print(result)
-print(s)
-
+for i in range(1,10):
+    s.push(i)
 
