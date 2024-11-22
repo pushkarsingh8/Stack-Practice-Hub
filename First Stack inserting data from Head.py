@@ -37,4 +37,3 @@ s.push(3)
 s.push(4)
 
 s.traverse()
-print(s)
