@@ -23,6 +23,8 @@ class stack:
         while curr!=None:
             print(curr.data)
             curr = curr.next
+            
+               
              
             
     def pop(self):
@@ -31,8 +33,10 @@ class stack:
             return 'stack empty'
         
         else:
+            data = self.top.data
             self.top = self.top.next
             
+        return data
             
         
         
@@ -46,11 +50,37 @@ class stack:
             new_node.next = self.top
             self.top = new_node
             
+    
+    def reverse(self,text):
+    
+        
+        
+        for word in text:
+            self.push(word)
+            # print(word)
+            
+        
+        result = ''
+        
+        while not self.is_empty():
+            result  +=  self.pop() 
+
+            
+        print(result)
+            
+            
+            
+            
+            
+        
+            
             
         
         
         
 s = stack()
-for i in range(1,10):
-    s.push(i)
+
+
+    
+s.reverse('hello')
 
