@@ -56,11 +56,11 @@ class Text_editor():
         for word in pattern:
             if word == "u":
                 data = self.u.pop()
-                print("3")
+
                 self.r.push(data)
             else:
                 data = self.r.pop()
-                print("3")
+                
                 self.u.push(data)
                 
         result = ''
@@ -80,7 +80,7 @@ class Text_editor():
 
                     
 s = Text_editor()
-s.txt_editior("hello","uru")
+s.txt_editior("hello","uruuu")
 
 
                     
