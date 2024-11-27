@@ -42,7 +42,7 @@ class stack:
             print(curr.data)
             curr = curr.next
             
-class Text_editor():   
+class Text_editor:   
     def __init__(self):
         self.u = stack()
         self.r = stack()
@@ -80,7 +80,7 @@ class Text_editor():
 
                     
 s = Text_editor()
-s.txt_editior("hello","uruuu")
+s.txt_editior("hello","uru uu")
 
 
                     
